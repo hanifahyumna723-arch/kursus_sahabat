@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Program - Teknisi Komputer | Sahabat Training Center</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Poppins', 'sans-serif'] }, colors: { navy: '#0B1528', primary: '#1A56DB' } } } }
+    </script>
+    <style>
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: sweep .3s ease-in-out; }
+        @keyframes sweep { 0% {opacity: 0; margin-top: -10px} 100% {opacity: 1; margin-top: 0px} }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-navy/95 backdrop-blur-sm border-b border-gray-800 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
+            <img src="logo.png" alt="Logo" class="w-10 h-10 object-contain onerror='this.style.display=\"none\"'">
+            <div class="leading-none text-white">
+                <h1 class="font-bold text-lg tracking-wide">KURSUS KOMPUTER</h1>
+                <p class="text-[10px] text-gray-400 tracking-widest">SAHABAT TRAINING CENTER</p>
+            </div>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="text-gray-300 hover:text-white transition"><i class="fa-solid fa-arrow-left mr-2"></i> Kembali ke Home</a>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB & HERO DETAIL SECTION -->
+    <section class="pt-32 pb-12 px-6 md:px-16 max-w-7xl mx-auto">
+        <div class="text-sm text-gray-500 mb-8 flex items-center gap-2">
+            <a href="index.html" class="hover:text-primary">Program Kursus</a>
+            <i class="fa-solid fa-chevron-right text-xs"></i>
+            <span class="text-navy font-medium">Teknisi Komputer</span>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row">
+            <div class="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
+                <span class="bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-4">HARDWARE & JARINGAN</span>
+                <h1 class="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">Kursus Teknisi Komputer</h1>
+                <p class="text-gray-600 mb-6">Pelajari cara merakit PC, instalasi sistem operasi, hingga memperbaiki kerusakan hardware dan software secara profesional.</p>
+                
+                <ul class="space-y-3 mb-8 text-sm text-gray-700 font-medium">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> 16 Pertemuan (90 Menit/Sesi)</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> Sertifikat Resmi</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> Bongkar Pasang Komponen Langsung</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> Peluang Buka Usaha Servis</li>
+                </ul>
+
+                <div class="text-3xl font-bold text-red-500 mb-6">Rp 3.000.000</div>
+                
+                <a href="https://wa.me/6281325479271?text=Halo%20Admin,%20saya%20ingin%20mendaftar%20Kursus%20Teknisi%20Komputer." target="_blank" class="bg-primary hover:bg-blue-700 text-white px-8 py-3.5 rounded-lg font-medium text-center transition w-full md:w-auto inline-block shadow-lg shadow-blue-500/30">
+                    Daftar Sekarang <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Teknisi Komputer Kelas" class="w-full h-full object-cover min-h-[300px]">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT GRID -->
+    <section class="pb-20 px-6 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- KOLOM KIRI -->
+        <div class="lg:col-span-2 space-y-10">
+            <!-- Tentang Program -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+                <h2 class="text-xl font-bold text-navy mb-4">Tentang Program</h2>
+                <p class="text-gray-600 text-sm leading-relaxed mb-8">
+                    Kursus ini didesain khusus bagi Anda yang ingin menguasai seluk-beluk komputer secara teknis. Anda tidak hanya belajar teori, tetapi akan langsung memegang obeng untuk merakit CPU, mengenali fungsi Motherboard, RAM, Hardisk/SSD, serta mempelajari cara instalasi Windows dan mendeteksi berbagai jenis kerusakan pada komputer/laptop.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center border-t border-gray-100 pt-8">
+                    <div>
+                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-microchip"></i></div>
+                        <p class="text-xs font-semibold text-navy">Kenal Hardware</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <p class="text-xs font-semibold text-navy">Praktik Merakit</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-brands fa-windows"></i></div>
+                        <p class="text-xs font-semibold text-navy">Instalasi OS</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-stethoscope"></i></div>
+                        <p class="text-xs font-semibold text-navy">Troubleshooting</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Materi yang Dipelajari -->
+            <div>
+                <h2 class="text-xl font-bold text-navy mb-6">Materi yang Dipelajari</h2>
+                
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden" open>
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">01</span> Pengenalan Komponen PC</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Memahami fungsi dan jenis-jenis Motherboard, Processor (CPU), RAM, Power Supply (PSU), VGA Card, serta media penyimpanan seperti HDD dan SSD.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">02</span> Perakitan Komputer (Hardware)</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Teknik bongkar pasang komputer yang aman, memasang pasta prosesor, pemasangan kabel panel depan (Front Panel), dan manajemen kabel (Cable Management).
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">03</span> Pengaturan BIOS / UEFI</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Cara masuk dan mengatur BIOS/UEFI, mengatur prioritas booting dari Flashdisk/DVD, dan pengecekan suhu hardware.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">04</span> Instalasi Windows & Software</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Membuat Bootable Flashdisk, membagi partisi Hardisk (Drive C & D), instalasi Windows 10/11, pemasangan Driver, serta aplikasi standar (Office, Browser, Antivirus).
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">05</span> Troubleshooting Hardware</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Cara mendiagnosis komputer mati total, layar tidak tampil (No Display), komputer sering restart sendiri, dan bunyi bip error pada motherboard.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">06</span> Maintenance & Jaringan Dasar</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Perawatan berkala (cleaning virus & file sampah), crimping kabel LAN (RJ45), pengaturan IP Address, dan sharing printer/file dalam jaringan.
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- KOLOM KANAN -->
+        <div class="space-y-8">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                <h3 class="font-bold text-navy mb-5">Informasi Program</h3>
+                <ul class="space-y-4 text-sm text-gray-600">
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-regular fa-folder text-primary w-4"></i> Kategori</span>
+                        <span class="font-medium text-navy">Hardware & IT</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-layer-group text-primary w-4"></i> Tingkat</span>
+                        <span class="font-medium text-navy">Pemula - Menengah</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-regular fa-calendar-days text-primary w-4"></i> Pertemuan</span>
+                        <span class="font-medium text-navy">16 Sesi</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-regular fa-clock text-primary w-4"></i> Durasi Sesi</span>
+                        <span class="font-medium text-navy">90 Menit</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-award text-primary w-4"></i> Sertifikat</span>
+                        <span class="font-medium text-navy">Ya</span>
+                    </li>
+                    <li class="flex justify-between pb-1">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-chalkboard-user text-primary w-4"></i> Metode</span>
+                        <span class="font-medium text-navy">Tatap Muka (Offline)</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/6281325479271?text=Halo%20Admin,%20saya%20ingin%20mendaftar%20Kursus%20Teknisi%20Komputer." target="_blank" class="block w-full bg-primary hover:bg-blue-700 text-white text-center py-3 rounded-lg font-medium transition mt-6">
+                    Daftar Sekarang <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                <h3 class="font-bold text-navy mb-5">Instruktur / Mentor</h3>
+                <div class="flex gap-4 items-start">
+                    <div class="w-16 h-16 rounded-lg bg-gray-200 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Mentor" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-navy">Tim Instruktur</h4>
+                        <p class="text-[11px] font-semibold text-primary mb-2">Hardware Engineer</p>
+                        <p class="text-xs text-gray-500 leading-relaxed">Teknisi profesional yang aktif di industri perakitan PC, troubleshooting, dan jaringan komputer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER AREA -->
+    <section class="bg-navy text-white border-t border-gray-800 pt-12 pb-6 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pb-8">
+            <div>
+                <h4 class="font-bold mb-4 text-lg">Kontak Kami</h4>
+                <ul class="text-sm text-gray-400 space-y-4">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-primary"></i> Jl. Serayu Timur Kebondalem,<br>Pemalang</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-primary"></i> 0813 2547 9271</li>
+                    <li class="flex items-center gap-3"><i class="fa-regular fa-envelope text-primary"></i> percetakansentral83grafika@gmail.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 text-lg">Sosial Media</h4>
+                <ul class="text-sm text-gray-400 space-y-4">
+                    <li class="flex items-center gap-3"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="w-5 h-5"> kursuskomputerpemalang_</li>
+                    <li class="flex items-center gap-3"><img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" class="w-5 h-5"> kursuskomputerpemalang</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-gray-500 text-xs text-center border-t border-gray-800 pt-6">
+            &copy; 2026 Kursus Komputer Sahabat Pemalang. All Rights Reserved.
+        </div>
+    </section>
+</body>
+</html>

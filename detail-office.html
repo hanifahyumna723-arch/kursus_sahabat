@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Program - Microsoft Office | Sahabat Training Center</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Poppins', 'sans-serif'] }, colors: { navy: '#0B1528', primary: '#1A56DB' } } } }
+    </script>
+    <style>
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: sweep .3s ease-in-out; }
+        @keyframes sweep { 0% {opacity: 0; margin-top: -10px} 100% {opacity: 1; margin-top: 0px} }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-navy/95 backdrop-blur-sm border-b border-gray-800 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
+            <img src="logo.png" alt="Logo" class="w-10 h-10 object-contain onerror='this.style.display=\"none\"'">
+            <div class="leading-none text-white">
+                <h1 class="font-bold text-lg tracking-wide">KURSUS KOMPUTER</h1>
+                <p class="text-[10px] text-gray-400 tracking-widest">SAHABAT TRAINING CENTER</p>
+            </div>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="text-gray-300 hover:text-white transition"><i class="fa-solid fa-arrow-left mr-2"></i> Kembali ke Home</a>
+        </div>
+    </nav>
+
+    <!-- BREADCRUMB & HERO DETAIL SECTION -->
+    <section class="pt-32 pb-12 px-6 md:px-16 max-w-7xl mx-auto">
+        <div class="text-sm text-gray-500 mb-8 flex items-center gap-2">
+            <a href="index.html" class="hover:text-primary">Program Kursus</a>
+            <i class="fa-solid fa-chevron-right text-xs"></i>
+            <span class="text-navy font-medium">Microsoft Office</span>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row">
+            <div class="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
+                <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-4">ADMINISTRASI PERKANTORAN</span>
+                <h1 class="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">Kursus Microsoft Office</h1>
+                <p class="text-gray-600 mb-6">Kuasai Word, Excel, dan PowerPoint dari nol. Sangat cocok untuk persiapan kerja admin, staf kantor, maupun pelajar/mahasiswa.</p>
+                
+                <ul class="space-y-3 mb-8 text-sm text-gray-700 font-medium">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> 12 Pertemuan (90 Menit/Sesi)</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> Sertifikat Resmi</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> Langsung Praktik Tugas Kantor</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> Cocok untuk Semua Umur</li>
+                </ul>
+
+                <div class="text-3xl font-bold text-red-500 mb-6">Rp 600.000</div>
+                
+                <a href="https://wa.me/6281325479271?text=Halo%20Admin,%20saya%20ingin%20mendaftar%20Kursus%20Microsoft%20Office." target="_blank" class="bg-primary hover:bg-blue-700 text-white px-8 py-3.5 rounded-lg font-medium text-center transition w-full md:w-auto inline-block shadow-lg shadow-blue-500/30">
+                    Daftar Sekarang <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Microsoft Office Kelas" class="w-full h-full object-cover min-h-[300px]">
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT GRID -->
+    <section class="pb-20 px-6 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        
+        <!-- KOLOM KIRI -->
+        <div class="lg:col-span-2 space-y-10">
+            <!-- Tentang Program -->
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+                <h2 class="text-xl font-bold text-navy mb-4">Tentang Program</h2>
+                <p class="text-gray-600 text-sm leading-relaxed mb-8">
+                    Kemampuan mengoperasikan Microsoft Office adalah syarat mutlak hampir di semua bidang pekerjaan saat ini. Di kelas ini, Anda akan diajarkan dari tingkat paling dasar (cara menyalakan komputer dan mengetik) hingga tingkat lanjut seperti pembuatan laporan keuangan otomatis di Excel, pembuatan surat massal di Word, dan mendesain slide presentasi profesional.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center border-t border-gray-100 pt-8">
+                    <div>
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-keyboard"></i></div>
+                        <p class="text-xs font-semibold text-navy">Mulai dari Nol</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-file-invoice"></i></div>
+                        <p class="text-xs font-semibold text-navy">Studi Kasus Admin</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-calculator"></i></div>
+                        <p class="text-xs font-semibold text-navy">Kuasai Rumus</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-green-50 text-green-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-certificate"></i></div>
+                        <p class="text-xs font-semibold text-navy">Sertifikat Resmi</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Materi yang Dipelajari -->
+            <div>
+                <h2 class="text-xl font-bold text-navy mb-6">Materi yang Dipelajari</h2>
+                
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden" open>
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">01</span> Dasar Komputer & Windows</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Pengenalan hardware, cara menghidupkan/mematikan komputer dengan benar, manajemen folder (menyimpan dan memindahkan file), serta penggunaan internet dasar.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">02</span> Microsoft Word (Dasar)</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Pengenalan area kerja, teknik mengetik 10 jari, format font & paragraf, pengaturan ukuran kertas (Page Layout), dan pembuatan tabel sederhana.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">03</span> Microsoft Word (Lanjutan)</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Membuat kop surat, Mail Merge (surat massal), daftar isi otomatis, penyisipan gambar & grafik, serta teknik print dokumen.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">04</span> Microsoft Excel (Dasar)</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Mengenal Cell & Range, input data, format cell (Rupiah, tanggal), membuat tabel laporan, dan rumus matematika dasar (Tambah, Kurang, Kali, Bagi).
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">05</span> Microsoft Excel (Lanjutan)</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Penerapan fungsi statistik (SUM, AVERAGE, MIN, MAX), fungsi logika (IF, AND, OR), fungsi pembacaan tabel (VLOOKUP, HLOOKUP), dan pembuatan grafik.
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">06</span> Microsoft PowerPoint</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">
+                        Merancang slide presentasi yang menarik, penggunaan template, menyisipkan gambar/video, serta menambahkan animasi dan transisi slide.
+                    </div>
+                </details>
+            </div>
+        </div>
+
+        <!-- KOLOM KANAN -->
+        <div class="space-y-8">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                <h3 class="font-bold text-navy mb-5">Informasi Program</h3>
+                <ul class="space-y-4 text-sm text-gray-600">
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-regular fa-folder text-primary w-4"></i> Kategori</span>
+                        <span class="font-medium text-navy">Administrasi / Perkantoran</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-layer-group text-primary w-4"></i> Tingkat</span>
+                        <span class="font-medium text-navy">Pemula</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-regular fa-calendar-days text-primary w-4"></i> Pertemuan</span>
+                        <span class="font-medium text-navy">12 Sesi</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-regular fa-clock text-primary w-4"></i> Durasi Sesi</span>
+                        <span class="font-medium text-navy">90 Menit</span>
+                    </li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-award text-primary w-4"></i> Sertifikat</span>
+                        <span class="font-medium text-navy">Ya</span>
+                    </li>
+                    <li class="flex justify-between pb-1">
+                        <span class="flex items-center gap-2"><i class="fa-solid fa-chalkboard-user text-primary w-4"></i> Metode</span>
+                        <span class="font-medium text-navy">Tatap Muka (Offline)</span>
+                    </li>
+                </ul>
+                <a href="https://wa.me/6281325479271?text=Halo%20Admin,%20saya%20ingin%20mendaftar%20Kursus%20Microsoft%20Office." target="_blank" class="block w-full bg-primary hover:bg-blue-700 text-white text-center py-3 rounded-lg font-medium transition mt-6">
+                    Daftar Sekarang <i class="fa-solid fa-arrow-right ml-1"></i>
+                </a>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                <h3 class="font-bold text-navy mb-5">Instruktur / Mentor</h3>
+                <div class="flex gap-4 items-start">
+                    <div class="w-16 h-16 rounded-lg bg-gray-200 overflow-hidden flex-shrink-0">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Mentor" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-navy">Tim Instruktur</h4>
+                        <p class="text-[11px] font-semibold text-primary mb-2">Ahli Administrasi & Office</p>
+                        <p class="text-xs text-gray-500 leading-relaxed">Berpengalaman melatih ratusan siswa untuk persiapan tes CPNS, Perangkat Desa, dan Staf Admin Perusahaan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER AREA -->
+    <section class="bg-navy text-white border-t border-gray-800 pt-12 pb-6 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 pb-8">
+            <div>
+                <h4 class="font-bold mb-4 text-lg">Kontak Kami</h4>
+                <ul class="text-sm text-gray-400 space-y-4">
+                    <li class="flex items-start gap-3"><i class="fa-solid fa-location-dot mt-1 text-primary"></i> Jl. Serayu Timur Kebondalem,<br>Pemalang</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-phone text-primary"></i> 0813 2547 9271</li>
+                    <li class="flex items-center gap-3"><i class="fa-regular fa-envelope text-primary"></i> percetakansentral83grafika@gmail.com</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold mb-4 text-lg">Sosial Media</h4>
+                <ul class="text-sm text-gray-400 space-y-4">
+                    <li class="flex items-center gap-3"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" class="w-5 h-5"> kursuskomputerpemalang_</li>
+                    <li class="flex items-center gap-3"><img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" class="w-5 h-5"> kursuskomputerpemalang</li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-gray-500 text-xs text-center border-t border-gray-800 pt-6">
+            &copy; 2026 Kursus Komputer Sahabat Pemalang. All Rights Reserved.
+        </div>
+    </section>
+</body>
+</html>
