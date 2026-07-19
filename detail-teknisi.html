@@ -202,20 +202,88 @@
             </div>
 
             <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
-                <h3 class="font-bold text-navy mb-5">Instruktur / Mentor</h3>
-                <div class="flex gap-4 items-start">
-                    <div class="w-16 h-16 rounded-lg bg-gray-200 overflow-hidden flex-shrink-0">
-                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Mentor" class="w-full h-full object-cover">
-                    </div>
-                    <div>
-                        <h4 class="font-bold text-navy">Tim Instruktur</h4>
-                        <p class="text-[11px] font-semibold text-primary mb-2">Hardware Engineer</p>
-                        <p class="text-xs text-gray-500 leading-relaxed">Teknisi profesional yang aktif di industri perakitan PC, troubleshooting, dan jaringan komputer.</p>
-                    </div>
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-bold text-navy">Galeri Kelas</h3>
+                    <span class="rounded-full border border-blue-100 bg-blue-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">4 Foto</span>
                 </div>
+                <div id="detail-gallery-grid" class="grid grid-cols-2 gap-2 mb-4"></div>
+                <button type="button" id="open-detail-gallery" class="inline-flex items-center text-sm text-primary font-medium hover:underline">
+                    Lihat Semua Foto <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
             </div>
+
         </div>
     </section>
+
+    <div id="detail-gallery-modal" class="fixed inset-0 z-[80] hidden items-center justify-center bg-black/90 px-4 py-6">
+        <button id="detail-close-gallery" type="button" class="absolute right-4 top-4 text-3xl text-white/80 transition hover:text-white">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="detail-prev-gallery" type="button" class="absolute left-4 top-1/2 -translate-y-1/2 text-3xl text-white/80 transition hover:text-white">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <img id="detail-gallery-image" src="" alt="Galeri detail" class="max-h-[80vh] max-w-full rounded-2xl object-contain shadow-[0_25px_80px_rgba(0,0,0,0.35)]">
+        <button id="detail-next-gallery" type="button" class="absolute right-4 top-1/2 -translate-y-1/2 text-3xl text-white/80 transition hover:text-white">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+    </div>
+
+    <script>
+        const detailGalleryImages = ["Testi1.jpeg", "Testi2.jpeg", "Testi3.jpeg", "Testi4.jpeg", "Testi5.jpeg", "Testi6.jpeg", "Testi7.jpeg", "Testi8.jpeg", "Testi9.jpeg", "Testi10.jpeg"];
+        const detailGalleryGrid = document.getElementById("detail-gallery-grid");
+        const detailGalleryModal = document.getElementById("detail-gallery-modal");
+        const detailGalleryImage = document.getElementById("detail-gallery-image");
+        let currentDetailGalleryIndex = 0;
+
+        function openDetailGallery(index) {
+            currentDetailGalleryIndex = index;
+            detailGalleryImage.src = detailGalleryImages[index];
+            detailGalleryModal.classList.remove("hidden");
+            detailGalleryModal.classList.add("flex");
+            document.body.classList.add("overflow-hidden");
+        }
+
+        function closeDetailGallery() {
+            detailGalleryModal.classList.add("hidden");
+            detailGalleryModal.classList.remove("flex");
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        document.getElementById("open-detail-gallery")?.addEventListener("click", () => openDetailGallery(0));
+        document.getElementById("detail-close-gallery")?.addEventListener("click", closeDetailGallery);
+        document.getElementById("detail-prev-gallery")?.addEventListener("click", () => {
+            currentDetailGalleryIndex = (currentDetailGalleryIndex - 1 + detailGalleryImages.length) % detailGalleryImages.length;
+            detailGalleryImage.src = detailGalleryImages[currentDetailGalleryIndex];
+        });
+        document.getElementById("detail-next-gallery")?.addEventListener("click", () => {
+            currentDetailGalleryIndex = (currentDetailGalleryIndex + 1) % detailGalleryImages.length;
+            detailGalleryImage.src = detailGalleryImages[currentDetailGalleryIndex];
+        });
+        detailGalleryModal?.addEventListener("click", (event) => {
+            if (event.target === detailGalleryModal) closeDetailGallery();
+        });
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") closeDetailGallery();
+        });
+
+        if (detailGalleryGrid) {
+            detailGalleryImages.slice(0, 4).forEach((file, index) => {
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = "group relative overflow-hidden rounded-xl border border-gray-200";
+                button.addEventListener("click", () => openDetailGallery(index));
+
+                const img = document.createElement("img");
+                img.src = file;
+                img.alt = `Galeri Kelas ${index + 1}`;
+                img.loading = "lazy";
+                img.className = "h-24 w-full object-cover transition duration-300 group-hover:scale-105";
+
+                button.appendChild(img);
+                detailGalleryGrid.appendChild(button);
+            });
+        }
+    </script>
 
     <!-- FOOTER AREA -->
     <section class="bg-navy text-white border-t border-gray-800 pt-12 pb-6 px-6 max-w-7xl mx-auto">

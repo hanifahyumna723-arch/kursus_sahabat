@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Program - Web Development | Sahabat Training Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Poppins', 'sans-serif'] },
+                    colors: { navy: '#0B1528', primary: '#1A56DB' }
+                }
+            }
+        }
+    </script>
+    <style>
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: sweep .3s ease-in-out; }
+        @keyframes sweep { 0% { opacity: 0; margin-top: -10px } 100% { opacity: 1; margin-top: 0px } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+    <nav class="fixed w-full z-50 bg-navy/95 backdrop-blur-sm border-b border-gray-800 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
+            <img src="logo.png" alt="Logo" class="w-10 h-10 object-contain onerror='this.style.display=\"none\"'">
+            <div class="leading-none text-white">
+                <h1 class="font-bold text-lg tracking-wide">KURSUS KOMPUTER</h1>
+                <p class="text-[10px] text-gray-400 tracking-widest">SAHABAT TRAINING CENTER</p>
+            </div>
+        </div>
+        <div class="hidden md:flex gap-8 text-sm font-medium">
+            <a href="index.html" class="text-gray-300 hover:text-white transition"><i class="fa-solid fa-arrow-left mr-2"></i> Kembali ke Home</a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-12 px-6 md:px-16 max-w-7xl mx-auto">
+        <div class="text-sm text-gray-500 mb-8 flex items-center gap-2">
+            <a href="index.html" class="hover:text-primary">Program Kursus</a>
+            <i class="fa-solid fa-chevron-right text-xs"></i>
+            <span class="text-navy font-medium">Web Development</span>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col md:flex-row">
+            <div class="p-8 md:p-12 md:w-1/2 flex flex-col justify-center">
+                <span class="bg-cyan-600 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-4">WEB</span>
+                <h1 class="text-3xl md:text-4xl font-bold text-navy mb-4 leading-tight">Kursus Web Development</h1>
+                <p class="text-gray-600 mb-6">Bangun website impian Anda dari nol dengan HTML, CSS, JavaScript, dan desain responsif yang modern. Sangat cocok untuk pemula yang ingin mulai karier digital.</p>
+                <ul class="space-y-3 mb-8 text-sm text-gray-700 font-medium">
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> 20 Pertemuan (90 Menit/Sesi)</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> Sertifikat Resmi</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> Praktik Membuat Website</li>
+                    <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-primary text-lg"></i> Cocok untuk Pemula</li>
+                </ul>
+                <div class="text-3xl font-bold text-red-500 mb-6">Rp 1.000.000</div>
+                <a href="https://wa.me/6281325479271?text=Halo%20Admin,%20saya%20ingin%20mendaftar%20Kursus%20Web%20Development." target="_blank" class="bg-primary hover:bg-blue-700 text-white px-8 py-3.5 rounded-lg font-medium text-center transition w-full md:w-auto inline-block shadow-lg shadow-blue-500/30">
+                    Daftar Sekarang <i class="fa-solid fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Web Development Kelas" class="w-full h-full object-cover min-h-[300px]">
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-20 px-6 md:px-16 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-10">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
+                <h2 class="text-xl font-bold text-navy mb-4">Tentang Program</h2>
+                <p class="text-gray-600 text-sm leading-relaxed mb-8">
+                    Program Web Development ini dirancang untuk siapa saja yang ingin memahami dasar-dasar pembuatan website modern. Anda akan belajar dari struktur HTML, desain tampilan dengan CSS, interaktivitas dengan JavaScript, hingga membuat halaman yang responsif untuk desktop dan handphone.
+                </p>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center border-t border-gray-100 pt-8">
+                    <div>
+                        <div class="w-12 h-12 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-code"></i></div>
+                        <p class="text-xs font-semibold text-navy">Belajar Coding</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <p class="text-xs font-semibold text-navy">Responsive</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-laptop-code"></i></div>
+                        <p class="text-xs font-semibold text-navy">Project Praktik</p>
+                    </div>
+                    <div>
+                        <div class="w-12 h-12 bg-cyan-50 text-cyan-600 rounded-full flex items-center justify-center text-xl mx-auto mb-3"><i class="fa-solid fa-certificate"></i></div>
+                        <p class="text-xs font-semibold text-navy">Sertifikat</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-bold text-navy mb-6">Materi yang Dipelajari</h2>
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden" open>
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">01</span> Dasar HTML & CSS</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">Membuat struktur halaman, styling, layout, dan desain tampilan website sederhana.</div>
+                </details>
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">02</span> JavaScript Dasar</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">Belajar logika program, event, dan interaksi elemen pada halaman web.</div>
+                </details>
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">03</span> Responsive Design</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">Mengatur tampilan agar nyaman dilihat di desktop, tablet, maupun handphone.</div>
+                </details>
+                <details class="group bg-white rounded-xl shadow-sm border border-gray-100 mb-3 overflow-hidden">
+                    <summary class="flex justify-between items-center font-bold p-5 text-navy bg-gray-50 group-hover:bg-gray-100 transition">
+                        <div class="flex items-center gap-4"><span class="text-gray-400 font-normal">04</span> Project Website</div>
+                        <i class="fa-solid fa-chevron-down text-gray-400 group-open:rotate-180 transition"></i>
+                    </summary>
+                    <div class="p-5 text-sm text-gray-600 bg-white border-t border-gray-100">Peserta akan membuat satu landing page atau portofolio sederhana sebagai hasil akhir pelatihan.</div>
+                </details>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                <h3 class="font-bold text-navy mb-5">Informasi Program</h3>
+                <ul class="space-y-4 text-sm text-gray-600">
+                    <li class="flex justify-between border-b border-gray-50 pb-3"><span class="flex items-center gap-2"><i class="fa-regular fa-folder text-primary w-4"></i> Kategori</span><span class="font-medium text-navy">Teknologi & Web</span></li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3"><span class="flex items-center gap-2"><i class="fa-solid fa-layer-group text-primary w-4"></i> Tingkat</span><span class="font-medium text-navy">Pemula</span></li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3"><span class="flex items-center gap-2"><i class="fa-regular fa-calendar-days text-primary w-4"></i> Pertemuan</span><span class="font-medium text-navy">20 Sesi</span></li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3"><span class="flex items-center gap-2"><i class="fa-regular fa-clock text-primary w-4"></i> Durasi Sesi</span><span class="font-medium text-navy">90 Menit</span></li>
+                    <li class="flex justify-between border-b border-gray-50 pb-3"><span class="flex items-center gap-2"><i class="fa-solid fa-award text-primary w-4"></i> Sertifikat</span><span class="font-medium text-navy">Ya</span></li>
+                    <li class="flex justify-between pb-1"><span class="flex items-center gap-2"><i class="fa-solid fa-chalkboard-user text-primary w-4"></i> Metode</span><span class="font-medium text-navy">Tatap Muka (Offline)</span></li>
+                </ul>
+                <a href="https://wa.me/6281325479271?text=Halo%20Admin,%20saya%20ingin%20mendaftar%20Kursus%20Web%20Development." target="_blank" class="block w-full bg-primary hover:bg-blue-700 text-white text-center py-3 rounded-lg font-medium transition mt-6">Daftar Sekarang <i class="fa-solid fa-arrow-right ml-1"></i></a>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="font-bold text-navy">Galeri Kelas</h3>
+                    <span class="rounded-full border border-blue-100 bg-blue-50 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-primary">4 Foto</span>
+                </div>
+                <div id="detail-gallery-grid" class="grid grid-cols-2 gap-2 mb-4"></div>
+                <button type="button" id="open-detail-gallery" class="inline-flex items-center text-sm text-primary font-medium hover:underline">
+                    Lihat Semua Foto <i class="fa-solid fa-arrow-right ml-1"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <div id="detail-gallery-modal" class="fixed inset-0 z-[80] hidden items-center justify-center bg-black/90 px-4 py-6">
+        <button id="detail-close-gallery" type="button" class="absolute right-4 top-4 text-3xl text-white/80 transition hover:text-white">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="detail-prev-gallery" type="button" class="absolute left-4 top-1/2 -translate-y-1/2 text-3xl text-white/80 transition hover:text-white">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <img id="detail-gallery-image" src="" alt="Galeri detail" class="max-h-[80vh] max-w-full rounded-2xl object-contain shadow-[0_25px_80px_rgba(0,0,0,0.35)]">
+        <button id="detail-next-gallery" type="button" class="absolute right-4 top-1/2 -translate-y-1/2 text-3xl text-white/80 transition hover:text-white">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+    </div>
+
+    <script>
+        const detailGalleryImages = ["Testi1.jpeg", "Testi2.jpeg", "Testi3.jpeg", "Testi4.jpeg", "Testi5.jpeg", "Testi6.jpeg", "Testi7.jpeg", "Testi8.jpeg", "Testi9.jpeg", "Testi10.jpeg"];
+        const detailGalleryGrid = document.getElementById("detail-gallery-grid");
+        const detailGalleryModal = document.getElementById("detail-gallery-modal");
+        const detailGalleryImage = document.getElementById("detail-gallery-image");
+        let currentDetailGalleryIndex = 0;
+
+        function openDetailGallery(index) {
+            currentDetailGalleryIndex = index;
+            detailGalleryImage.src = detailGalleryImages[index];
+            detailGalleryModal.classList.remove("hidden");
+            detailGalleryModal.classList.add("flex");
+            document.body.classList.add("overflow-hidden");
+        }
+
+        function closeDetailGallery() {
+            detailGalleryModal.classList.add("hidden");
+            detailGalleryModal.classList.remove("flex");
+            document.body.classList.remove("overflow-hidden");
+        }
+
+        document.getElementById("open-detail-gallery")?.addEventListener("click", () => openDetailGallery(0));
+        document.getElementById("detail-close-gallery")?.addEventListener("click", closeDetailGallery);
+        document.getElementById("detail-prev-gallery")?.addEventListener("click", () => {
+            currentDetailGalleryIndex = (currentDetailGalleryIndex - 1 + detailGalleryImages.length) % detailGalleryImages.length;
+            detailGalleryImage.src = detailGalleryImages[currentDetailGalleryIndex];
+        });
+        document.getElementById("detail-next-gallery")?.addEventListener("click", () => {
+            currentDetailGalleryIndex = (currentDetailGalleryIndex + 1) % detailGalleryImages.length;
+            detailGalleryImage.src = detailGalleryImages[currentDetailGalleryIndex];
+        });
+        detailGalleryModal?.addEventListener("click", (event) => {
+            if (event.target === detailGalleryModal) closeDetailGallery();
+        });
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") closeDetailGallery();
+        });
+
+        if (detailGalleryGrid) {
+            detailGalleryImages.slice(0, 4).forEach((file, index) => {
+                const button = document.createElement("button");
+                button.type = "button";
+                button.className = "group relative overflow-hidden rounded-xl border border-gray-200";
+                button.addEventListener("click", () => openDetailGallery(index));
+
+                const img = document.createElement("img");
+                img.src = file;
+                img.alt = `Galeri Kelas ${index + 1}`;
+                img.loading = "lazy";
+                img.className = "h-24 w-full object-cover transition duration-300 group-hover:scale-105";
+
+                button.appendChild(img);
+                detailGalleryGrid.appendChild(button);
+            });
+        }
+    </script>
+</body>
+</html>
